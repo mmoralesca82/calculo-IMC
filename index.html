@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <main class="bg-green-900 w-[500px] mx-auto mt-8 p-4  rounded-2xl">
+        <h1 class="text-center text-3xl mb-7 font-semibold text-white">Calculadora de IMC</h1>
+        <div class="grid grid-cols-2 gap-5 mb-4">
+            <input type="text" class="inputWeight align-middle gap-3 h-12 text-center text-xl rounded-xl text-cyan-950" placeholder="Ingrese peso en Kg" />
+            <input type="text" class="inputSize align-middle gap-3 h-12 text-center text-xl rounded-xl text-cyan-950" placeholder="Ingrese talla en cm."/>      
+        </div>
+        <div class="grid grid-cols-2 gap-6 mt-12 mb-6">
+            <button class="button rounded-xl bg-green-300 text-green-900 text-2xl hover:bg-blue-300 hover:text-blue-950">Calcular</button>
+            <input type="text" class="outIMC align-middle gap-3 h-12 text-center text-xl rounded-xl bg-green-900 text-white" value="0.0" />
+        </div>        
+    </main>
+    <div class="mx-auto w-[500px] mt-5">
+        <h1 class="outResult text-center text-3xl"></h1>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
